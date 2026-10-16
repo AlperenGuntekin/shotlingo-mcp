@@ -69,7 +69,7 @@ The first tool call opens a browser window to sign in to ShotLingo (OAuth 2.1 wi
 | Step | Tools |
 |---|---|
 | Start from a template or your own screenshots | `list_templates`, `get_template`, `adapt_template`, `create_project`, `duplicate_project`, `import_image`, `import_store_screenshots` |
-| Edit the layout | `generate_page`, `apply_device_frame`, `update_project`, `fit_text` |
+| Edit the layout | `generate_page`, `apply_device_frame`, `update_project`, `fit_text_into_design` |
 | Localize | `set_translations`, `get_translations` (41 languages, right-to-left included) |
 | Render | `render_screenshot`, `start_batch`, `get_batch_status` |
 | Ship | `export_to_app_store`, `export_to_google_play`, `list_app_store_apps`, `list_google_play_apps` |

@@ -57,7 +57,7 @@ Screenshots are the part of a store listing most people look at before they deci
 If tools named like `list_templates`, `set_translations` and `render_screenshot` are available:
 
 1. `list_templates` or `import_store_screenshots`, then `adapt_template` / `create_project` with the user's screenshots.
-2. Write the captions with the rules above; `fit_text` for long languages.
+2. Write the captions with the rules above; `fit_text_into_design` shows which captions do not fit in long languages.
 3. `set_translations` for each target language, then `render_screenshot` for one page and show it before rendering everything.
 4. `start_batch` for the full set, poll `get_batch_status`.
 5. Upload only when the user asks: `export_to_app_store` or `export_to_google_play` replace what is on the listing.

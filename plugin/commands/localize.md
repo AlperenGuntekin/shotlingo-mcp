@@ -9,7 +9,7 @@ Follow the `app-store-screenshots` skill.
 
 1. Find the source. If a ShotLingo project name was given, use `list_projects` and open it; if screenshots were given, start with `import_image` or `import_store_screenshots` and `adapt_template`.
 2. Read the current captions with `get_translations`. Rewrite each one for every target language: keep the benefit, fit the market, no prices.
-3. Write them with `set_translations`, then use `fit_text` on any caption that is long in that language.
+3. Write them with `set_translations`, then check with `fit_text_into_design` which captions do not fit in that language and shorten them.
 4. Render one page per language with `render_screenshot` and show the results. Point out anything clipped or wrapped badly and fix it before going on.
 5. When the user is happy, render the rest with `start_batch` and report progress from `get_batch_status`.
 6. Do not upload unless the user asks. `export_to_app_store` and `export_to_google_play` replace the screenshots on the live listing.
