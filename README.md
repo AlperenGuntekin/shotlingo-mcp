@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/demo.gif" alt="ShotLingo translating one screenshot set into 41 languages" width="360">
+  <img src="assets/demo.gif" alt="Claude Code calls the ShotLingo MCP tools and an App Store screenshot comes back localized into many languages" width="800">
 </p>
 
 ## Install in one line
