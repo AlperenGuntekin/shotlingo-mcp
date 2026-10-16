@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.shotlingo/mcp",
+  "title": "Shotlingo",
+  "description": "App Store and Google Play screenshot generator: design, localize into 41 languages, render, upload.",
+  "version": "1.0.1",
+  "websiteUrl": "https://shotlingo.com/mcp/",
+  "repository": {
+    "url": "https://github.com/AlperenGuntekin/shotlingo-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.shotlingo.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "shotlingo-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "App Store screenshot generator MCP: client configs, Claude Code plugin and screenshot design skill for the hosted ShotLingo server.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://shotlingo.com/mcp/",
+  "repository": "github:AlperenGuntekin/shotlingo-mcp",
+  "scripts": {
+    "test": "node scripts/check.mjs",
+    "check:live": "node scripts/check.mjs --live"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

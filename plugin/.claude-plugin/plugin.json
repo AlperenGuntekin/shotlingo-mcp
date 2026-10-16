@@ -1,0 +1,20 @@
+{
+  "name": "shotlingo",
+  "version": "0.1.0",
+  "description": "App Store and Google Play screenshot generator. Design, localize into 41 languages, render and upload screenshot sets from Claude Code.",
+  "author": {
+    "name": "ShotLingo",
+    "email": "hello@shotlingo.com",
+    "url": "https://shotlingo.com"
+  },
+  "homepage": "https://shotlingo.com/mcp/",
+  "repository": "https://github.com/AlperenGuntekin/shotlingo-mcp",
+  "license": "MIT",
+  "keywords": ["app-store", "screenshots", "aso", "localization", "mcp", "google-play"],
+  "mcpServers": {
+    "shotlingo": {
+      "type": "http",
+      "url": "https://mcp.shotlingo.com/mcp"
+    }
+  }
+}
