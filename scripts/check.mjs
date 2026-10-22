@@ -42,6 +42,9 @@ for (const file of walk(join(root, 'plugin')).filter((f) => f.endsWith('.md'))) 
   if (!fm || !/^description: .+/m.test(fm[1])) fail(`${rel} has no frontmatter description`);
   else if (rel.endsWith('SKILL.md') && !/^name: [a-z0-9-]+$/m.test(fm[1])) fail(`${rel} has no valid name`);
   else ok(`${rel} frontmatter`);
+  // Public docs: no local paths, no client-specific tool prefixes, no em dashes.
+  const leaks = [/\/Users\//, /~\//, /\bmcp__/, new RegExp(String.fromCharCode(0x2014))].filter((re) => re.test(text));
+  leaks.length ? fail(`${rel} contains ${leaks.join(', ')}`) : ok(`${rel} has no local paths or tool prefixes`);
 }
 
 // 3. README install lines use the same URL.

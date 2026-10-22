@@ -1,7 +1,7 @@
 {
   "name": "shotlingo",
-  "version": "0.1.0",
-  "description": "App Store and Google Play screenshot generator. Design, localize into 41 languages, render and upload screenshot sets from Claude Code.",
+  "version": "0.2.0",
+  "description": "App Store and Google Play screenshot generator. Design, localize into 41 languages, render and upload screenshot sets from Claude Code. Connects the hosted ShotLingo MCP server and adds a screenshot design skill, a ShotLingo tool guide skill and a /shotlingo:localize command.",
   "author": {
     "name": "ShotLingo",
     "email": "hello@shotlingo.com",

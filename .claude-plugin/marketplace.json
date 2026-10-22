@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "App Store screenshot generator for Claude Code: design, localize into 41 languages, render and upload screenshot sets.",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "shotlingo",
       "source": "./plugin",
-      "description": "App Store and Google Play screenshot generator. Connects the hosted ShotLingo MCP server and adds a screenshot design skill and a /shotlingo:localize command.",
-      "version": "0.1.0",
+      "description": "App Store and Google Play screenshot generator. Connects the hosted ShotLingo MCP server and adds a screenshot design skill, a ShotLingo tool guide skill and a /shotlingo:localize command.",
+      "version": "0.2.0",
       "category": "design",
       "homepage": "https://shotlingo.com/mcp/",
       "keywords": ["app-store", "screenshots", "aso", "localization", "mcp", "google-play"]

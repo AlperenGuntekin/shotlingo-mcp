@@ -20,12 +20,20 @@
 ## Install in one line
 
 <a id="claude-code"></a>
-**Claude Code** (plugin: MCP server + screenshot design skill + `/shotlingo:localize` command)
+**Claude Code** (plugin: MCP server + screenshot design skill + ShotLingo tool guide skill + `/shotlingo:localize` command)
 
 ```bash
-claude plugin marketplace add AlperenGuntekin/shotlingo-mcp
-claude plugin install shotlingo@shotlingo
+claude plugin install shotlingo --marketplace AlperenGuntekin/shotlingo-mcp
 ```
+
+Inside a Claude Code session, or on a Claude Code version older than 2.1.292:
+
+```
+/plugin marketplace add AlperenGuntekin/shotlingo-mcp
+/plugin install shotlingo@shotlingo
+```
+
+Then run `/mcp`, pick `plugin:shotlingo:shotlingo` and sign in.
 
 Only the server, no plugin:
 
@@ -80,6 +88,7 @@ Text is fitted by the same export pipeline the ShotLingo web editor uses, so a G
 The Claude Code plugin also ships:
 
 - **`app-store-screenshots` skill:** the screenshot design rules we use: what the first three screens must do, caption length, sizes, localization traps, App Review rules. It works on its own, with no account.
+- **`shotlingo` skill:** how to drive the ShotLingo tools: which ones only read, which ones edit the design and which ones touch a live listing, how to undo with saved versions, render without hitting the rate limit, and set up an App Store product page test.
 - **`/shotlingo:localize` command:** one command from "here is my English set" to a rendered, localized set.
 
 ## Pricing and the free path
