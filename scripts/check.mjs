@@ -49,7 +49,9 @@ for (const file of walk(join(root, 'plugin')).filter((f) => f.endsWith('.md'))) 
 
 // 3. README install lines use the same URL.
 const readme = readFileSync(join(root, 'README.md'), 'utf8');
+// The free audit (GET /audit) is the one other public path; every connector line must use SERVER_URL.
 const urls = new Set(readme.match(/https:\/\/mcp\.shotlingo\.com\/[a-z]*/g));
+urls.delete('https://mcp.shotlingo.com/audit');
 urls.size === 1 && urls.has(SERVER_URL) ? ok('README uses one server URL') : fail(`README server URLs: ${[...urls].join(', ')}`);
 
 // 4. Secret scan: nothing that looks like a credential may be committed.
@@ -76,6 +78,20 @@ for (const file of textFiles) {
   }
 }
 if (!secretHits) ok(`secret scan clean (${textFiles.length} text files)`);
+
+// 4b. `npx skills add AlperenGuntekin/shotlingo-mcp` finds the skills through skills.sh.json
+// (vercel-labs/skills docs/creating-skills.md, "Custom Discovery Paths"): every listed path must
+// exist and hold <name>/SKILL.md folders whose frontmatter name matches the folder.
+const skillsCfg = readJson('skills.sh.json');
+for (const p of skillsCfg.paths ?? []) {
+  if (!p.startsWith('./') || !existsSync(join(root, p))) { fail(`skills.sh.json path ${p} missing or not ./-relative`); continue; }
+  const names = readdirSync(join(root, p)).filter((d) => existsSync(join(root, p, d, 'SKILL.md')));
+  names.length ? ok(`skills.sh.json ${p}: ${names.join(', ')}`) : fail(`skills.sh.json ${p} holds no SKILL.md`);
+  for (const d of names) {
+    const fmName = readFileSync(join(root, p, d, 'SKILL.md'), 'utf8').match(/^---\n[\s\S]*?^name:\s*(\S+)/m)?.[1];
+    fmName === d ? ok(`skill ${d} name matches its folder`) : fail(`skill folder ${d} has name ${fmName}`);
+  }
+}
 
 // 5. Optional live probe of the hosted server.
 if (process.argv.includes('--live')) {
