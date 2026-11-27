@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or how-to
+    url: https://github.com/AlperenGuntekin/shotlingo-mcp/discussions/categories/q-a
+    about: Ask how to use the ShotLingo MCP, the skills or the store page audit. Answers stay searchable for others.
+  - name: Idea or feature discussion
+    url: https://github.com/AlperenGuntekin/shotlingo-mcp/discussions/categories/ideas
+    about: Float an idea or talk through a feature before it becomes an issue.
+  - name: Show and tell
+    url: https://github.com/AlperenGuntekin/shotlingo-mcp/discussions/categories/show-and-tell
+    about: Share a screenshot set, workflow or prompt you built with ShotLingo MCP.

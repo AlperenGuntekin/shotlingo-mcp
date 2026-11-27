@@ -157,6 +157,13 @@ your agent ──MCP over HTTPS──▶ mcp.shotlingo.com ──▶ ShotLingo r
 
 The server is hosted and closed source. This repo is the open part: client configs, the Claude Code plugin and the skills. Bugs and feature requests for the server are welcome here as issues. The ShotLingo web editor at [shotlingo.com](https://shotlingo.com?utm_source=github-readme&utm_medium=readme&utm_campaign=mcp) has a free plan.
 
+## Feedback & feature requests
+
+- **Questions and how-to:** [Discussions, Q&A](https://github.com/AlperenGuntekin/shotlingo-mcp/discussions/categories/q-a)
+- **Ideas and feature requests:** [Discussions, Ideas](https://github.com/AlperenGuntekin/shotlingo-mcp/discussions/categories/ideas), or open a [feature request issue](https://github.com/AlperenGuntekin/shotlingo-mcp/issues/new?template=feature_request.yml)
+- **Bugs:** open a [bug report](https://github.com/AlperenGuntekin/shotlingo-mcp/issues/new?template=bug_report.yml)
+- **What you built:** [Discussions, Show and tell](https://github.com/AlperenGuntekin/shotlingo-mcp/discussions/categories/show-and-tell)
+
 ## Privacy
 
 This repo collects nothing: it is configuration and Markdown. What the hosted service stores is described in [shotlingo.com/privacy](https://shotlingo.com/privacy).

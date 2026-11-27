@@ -1,0 +1,59 @@
+name: Bug report
+description: Something in the ShotLingo MCP, the Claude Code plugin, the skills or the store page audit does not work as documented.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please do not paste tokens, API keys or private App Store Connect data. For "how do I..." questions use Discussions, Q&A.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did it happen?
+      options:
+        - MCP server (tool call)
+        - Claude Code plugin or /shotlingo:localize command
+        - Skills (store-audit, app-store-screenshots, shotlingo)
+        - Store page audit (mcp.shotlingo.com/audit)
+        - Client config (Claude, Cursor, VS Code, stdio)
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Tool or command
+      description: For example `render_screenshot`, `start_batch`, or the audit URL you called.
+  - type: input
+    id: client
+    attributes:
+      label: Client and version
+      description: For example Claude Code 2.1.x, Cursor, VS Code, Claude web.
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: The exact error text or output you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The prompt you gave your agent or the command you ran.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
