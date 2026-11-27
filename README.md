@@ -12,6 +12,7 @@
   <a href="#cursor"><img alt="Cursor" src="https://img.shields.io/badge/Cursor-one%20click-000000"></a>
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-green"></a>
   <a href="https://github.com/AlperenGuntekin/shotlingo-mcp/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AlperenGuntekin/shotlingo-mcp?style=social"></a>
+  <a href="https://glama.ai/mcp/connectors/com.shotlingo/mcp"><img alt="ShotLingo MCP connector on Glama" src="https://glama.ai/mcp/connectors/com.shotlingo/mcp/badges/score.svg"></a>
 </p>
 
 <p align="center">
