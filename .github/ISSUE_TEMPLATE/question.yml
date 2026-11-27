@@ -1,0 +1,24 @@
+name: Question
+description: Ask how to use the ShotLingo MCP, the skills or the store page audit.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions are easier for others to find in [Discussions, Q&A](https://github.com/AlperenGuntekin/shotlingo-mcp/discussions/categories/q-a). Use this form only if you cannot use Discussions.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: Client you use
+      description: For example Claude Code, Cursor, VS Code, Claude web.
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you tried
